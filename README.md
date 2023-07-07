@@ -2,11 +2,27 @@
 - `npm init -y` para crear package.json
 - Instalar dependencias
 - Configurar en el package.json el script `"dev": "nodemon src/index.js"`
-- Empezar por el archivo **src/index.js**
+- Para ver que hace la app empezar por el archivo **src/index.js**
 
 ## Dependencias
+
+Se añadio dependencies, type, scripts/dev
+
 ```JSON
-"dependencies": {
+{
+  "name": "nodejs-sequelize-fazt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
@@ -17,10 +33,11 @@
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
+}
 ```
 
 ## Inicializacion y conexion a DB
-Todo empieza por el archivo app.js 
+Todo comienza por el archivo `app.js` 
 
 ```javascript
 import express from 'express'  
@@ -28,7 +45,7 @@ const app = express()
 export default app
 ```
 
-Para la conexion con la DB se usa **sequelize** en database.js
+Para la conexion con la DB se usa **sequelize** en `database.js`
 - Segun la doc [^terminology-convention] es necesario importarlo con MAYUSCULA
 - Segun la doc [^connecting-database], se sigue la opcion 3
 
@@ -47,7 +64,7 @@ export const sequelize_connection = new Sequelize(
 )
 ```
 
-Teniendo al final el index.js, donde Siguiendo la doc [^testing-connection] se engloba todo en una func para poder hacer un try-catch async
+Teniendo al final el `index.js`, donde Siguiendo la doc [^testing-connection] se engloba todo en una func para poder hacer un try-catch async
 
 ```javascript
 import app from "./app.js";
@@ -81,13 +98,11 @@ Server is listening in port: 4020
 
 #### Que sigue?
 Realizar
-1. models,
-2. rutas, 
-3. Middlewares
-4. controladores
-5. (relaciones de tablas)
-6. middlewares (en app.js), 
-7. etc.
+1. Models (relaciones de tablas)
+2. Routes 
+3. Middlewares  (en app.js y routes)
+4. Controllers 
+5. etc.
 
 ---
 
