@@ -1,0 +1,22 @@
+# Archivos generados por npm
+node_modules/
+
+# Archivos generados por Sequelize
+migrations/
+
+# Archivos de configuración local
+config.js
+
+# Archivos de registro y logs
+logs/
+*.log
+
+# Archivos generados por IDEs
+.vscode/
+.idea/
+
+# Archivos de entorno
+.env
+
+# Otros archivos generados automáticamente
+dist/
