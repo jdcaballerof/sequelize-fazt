@@ -4,7 +4,7 @@
 - Configurar en el package.json el script `"dev": "nodemon src/index.js"`
 - Para ver que hace la app empezar por el archivo **src/index.js**
 
-## Dependencias
+### Dependencias
 
 Se añadio dependencies, type, scripts/dev
 
@@ -36,7 +36,7 @@ Se añadio dependencies, type, scripts/dev
 }
 ```
 
-## Inicializacion y conexion a DB
+### Inicializacion y conexion a DB
 Todo comienza por el archivo `app.js` 
 
 ```javascript
