@@ -94,6 +94,7 @@ Realizar
 ## Models
 
 El modelado de datos (relacion de tablas)
+
 ![Relacion de tablas](https://github.com/FaztWeb/nodejs-sequelize-restapi-postgres/raw/master/docs/diagram.png "Relacion de tablas")
 <center> <i> 1 proyect tienen muchas task's </i> </center>
 
